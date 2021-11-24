@@ -1,0 +1,7 @@
+.idea
+media/videos
+styles/_fonts.scss
+styles/_global.scss
+styles/_query.scss
+styles/_variables.scss
+styles/_styles.scss
