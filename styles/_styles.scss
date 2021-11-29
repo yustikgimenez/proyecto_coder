@@ -1,0 +1,144 @@
+.btn {
+  padding: 20px 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  transition: all ease .200s;
+  background-color: $primary_color;
+  text-transform: uppercase;
+  &:hover {
+    background-color: white;
+    transform: scale(1.1);
+    color: $primary_color;
+  }
+  &.btn--btnDownload {
+    background-color: white;
+    color: $primary_color;
+  }
+  &.btn--btnSend {
+    &:hover {
+      transform: none;
+      cursor: pointer;
+    }
+  }
+}
+.featured {
+  position: absolute;
+  justify-content: center;
+  grid-template-columns: 70%;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  .featured__box {
+    padding: 30px 25px 60px;
+    color: white;
+    display: inline-block;
+    text-align:center;
+    background-color: $secondary_color;
+    .featured__box-title {
+      font-family: $secondary_font;
+      font-weight: 900;
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
+    &.featured__box--blue {
+      background-color: $primary_color;
+    }
+  }
+}
+.accordion-item {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  .accordion-button {
+    font-size: 1.1rem;
+    color: #76787a;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: #3498DB;
+  }
+}
+
+/* Extend */
+.boxTransparent {
+  width: 100%;
+  padding: 30px 24px 30px;
+  background-color: transparent;
+  color: #303849;
+  text-align: left;
+  border: solid thin #303849;
+  transition: all ease .500s;
+  &:hover {
+    color: white;
+    background-color: #3498DB;
+    border-color: transparent;
+    transform: translateY(10px);
+    .boxTransparent__plus {
+      background-color: #303849;
+    }
+  }
+  .boxTransparent__plus {
+    background-color: #3498DB;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    transition: all ease .500s;
+  }
+
+  .boxTransparent__title {
+    @extend .titleCard;
+    margin-bottom: 10px;
+    &:before {
+      display: none;
+    }
+  }
+}
+/*  / Extend */
+
+.blockquoteCustom {
+  background-color: #3498DB;
+  color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  h4 {
+    font-family: "Jost", sans-serif;
+    margin-bottom: 20px;
+  }
+}
+.cardID {
+  .cardID__bg {
+    background-color: #F2F1ED;
+    align-items: center;
+    margin: 60px auto;
+  }
+  .cardID__inner {
+    padding: 30px;
+    color: #303849;
+  }
+  .cardID__title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #3498DB;
+    font-family: "Jost", sans-serif;
+  }
+}
+.form {
+  padding: 35px;
+}
+
+.notFound {
+  font-size: 1.5rem;
+  font-weight: 900;
+  .error404 {
+    font-size: 4rem;
+  }
+  span {
+    display: block;
+  }
+  a {
+    color: $primary_color;
+  }
+}

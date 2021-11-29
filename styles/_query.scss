@@ -1,0 +1,108 @@
+
+@media (max-width:991px) {
+  .featured {
+    bottom: -150px;
+  }
+}
+
+@media (max-width:768px) {
+  .header {
+    padding: 5px 5px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .header_logo {
+    max-width: 130px;
+    margin-bottom: 0;
+  }
+  .btn {
+    padding: 10px 15px;
+    font-size: .9rem;
+  }
+  .hero {
+    padding: 130px 0;
+    margin-bottom: 30px;
+    &.hero--pages {
+      padding: 150px 0 20px;
+    }
+    .hero__texts {
+      .hero__small-title {
+        font-size: 1.2rem;
+      }
+      .hero__h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .featured {
+    position: initial;
+  }
+  .contentBlock {
+    padding-top: 0;
+  }
+  .titleCard {
+    text-align: center;
+    font-size: 2rem;
+    &::before {
+      margin: 0 auto;
+    }
+  }
+  .sectionBlock--bg-blue {
+    text-align: center;
+  }
+  .btn {
+    width: 100%;
+    &:hover {
+      transform: none;
+    }
+    &.btn--btnDownload {
+      float: initial;
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+  }
+  .sectionBlock img {
+    display: block;
+    margin: 0 auto 50px;
+  }
+  .carousel-item img {
+    margin-bottom: 0;
+  }
+  .customList {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    &.customList--pvc {
+      text-align: center;
+      padding-left: 0;
+      li {
+        padding-left: 0;
+      }
+    }
+  }
+  .boxTransparent {
+    margin-bottom: 20px;
+  }
+  .form {
+    margin-top: 20px;
+  }
+  .footer {
+    text-align: center;
+    padding: 30px 10px;
+  }
+  .cardSection {
+    &.cardSection--galeryText {
+      margin: 30px auto;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .featured__box-title {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+}

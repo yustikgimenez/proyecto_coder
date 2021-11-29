@@ -1,0 +1,48 @@
+$primary_font: 'Poppins', sans-serif;
+$secondary_font: "Jost", sans-serif;
+
+$primary_color: #3498DB;
+$secondary_color: #303849;
+
+/* Operaciones */
+$padding-hero: 150px;
+
+/* Map */
+$social--colors:(
+        twitter: #00acee,
+        instagram: #e1306c,
+        youtube: #c4302b,
+);
+@each $color-name, $color-rss in $social--colors {
+  .color--#{$color-name}{
+    color: white;
+    font-size: 2rem;
+    &:hover {
+      color: $color-rss;
+    }
+  }
+}
+
+/* Bucle */
+$marginCardID: 50px;
+@for $v from 1 to 5 {
+  .cardID--#{$v}{
+    margin: $marginCardID * ($v/2) !important;
+  }
+}
+
+/* Each */
+@each $bgHero in nosotros, productos, i-d, contacto {
+  .hero--#{$bgHero} {
+    background-image: url("../media/images/#{$bgHero}.jpg") !important;
+  }
+}
+
+/* Mixin */
+@mixin reset-list {
+  padding-left: 0;
+  margin-left: 1.2rem;
+  li {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,156 @@
+body {
+  font-family: $primary_font;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.5;
+  color: #303849;
+}
+a {
+  color: white;
+}
+.header {
+  padding: 5px 30px;
+  background-color: rgba($secondary_color, .85);
+}
+.header_logo {
+  max-width: 200px;
+}
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      color: white;
+      letter-spacing: 1px;
+      padding: 0.5rem 1.5rem;
+      &:hover {
+        color: $primary_color;
+      }
+    }
+  }
+}
+.hero {
+  position: relative;
+  background-image: url(../media/images/hero-bg.jpg);
+  background-size: cover;
+  color: white;
+  padding: $padding-hero * 2;
+
+
+  .hero__texts {
+    padding: 0 30px;
+    text-align: center;
+    color: white;
+    .hero__small-title {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+    .hero__h1 {
+      font-family: 'Jost', sans-serif;
+      margin-bottom: 30px;
+      font-weight: 500;
+      font-size: 3rem;
+    }
+  }
+  &.hero--pages {
+    padding: 200px 0 30px;
+  }
+}
+.contentBlock {
+  padding-top: 250px;
+}
+.plainText {
+  margin-bottom: 25px;
+}
+
+/* Mixin */
+.customList {
+  @include reset-list;
+  &.customList--pvc {
+    margin-bottom: 30px;
+    list-style-type: none;
+    .customList--pvc--subTitle {
+      color: #303849;
+      font-family: "Jost", sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+  }
+  &.customList--horizontal {
+    li {
+      display: inline;
+      margin: 0 15px;
+      font-size: 1.2rem;
+
+    }
+  }
+}
+/* / Mixin */
+
+.sectionBlock {
+  margin: 120px auto;
+  &.sectionBlock--bg-blue {
+    background-image: linear-gradient(to bottom, #3498DB, #15537d);
+    overflow: hidden;
+    padding: 30px 0;
+    color: white;
+  }
+  .sectionBlock_big-font {
+    font-size: 2.2rem;
+    font-weight: 800;
+  }
+}
+.cardSection {
+  &.cardSection--galeryText {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+}
+.titleCard {
+  font-family: $secondary_font;
+  font-weight: 900;
+  color: #303849;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  &::before {
+    display: block;
+    content: "";
+    border-top: 0.3rem solid $primary_color;
+    width: 3rem;
+    transform: translateY(-1rem);
+  }
+  span {
+    color: #3498DB;
+  }
+}
+.widgetFooter {
+  .widgetFooter__title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+  }
+  .widgetFooter__subTitle {
+    margin-bottom: 20px;
+  }
+  .widgetFooter--representante {
+    margin-bottom: 30px;
+    .widgetFooter--empresa {
+      margin-bottom: 15px;
+      list-style: none;
+      color: #3498DB;
+      font-weight: 400;
+    }
+  }
+}
+.footer {
+  background-image: linear-gradient(to bottom, #303849, #030916);
+  color: white;
+  padding: 50px;
+  .footer__logo {
+    max-width: 250px;
+    margin-bottom: 30px;
+  }
+}
+
+
