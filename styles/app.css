@@ -75,7 +75,7 @@ a {
 
 .header {
   padding: 5px 30px;
-  background-color: rgba(36, 36, 36, 0.85);
+  background-color: rgba(48, 56, 73, 0.85);
 }
 
 .header_logo {
@@ -88,7 +88,7 @@ a {
   padding: 0.5rem 1.5rem;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #dbd334;
+  color: #3498DB;
 }
 
 .hero {
@@ -181,7 +181,7 @@ a {
 .titleCard::before, .boxTransparent .boxTransparent__title::before {
   display: block;
   content: "";
-  border-top: 0.3rem solid #dbd334;
+  border-top: 0.3rem solid #3498DB;
   width: 3rem;
   transform: translateY(-1rem);
 }
@@ -224,17 +224,17 @@ a {
   color: white;
   font-weight: 800;
   transition: all ease 0.2s;
-  background-color: #dbd334;
+  background-color: #3498DB;
   text-transform: uppercase;
 }
 .btn:hover {
   background-color: white;
   transform: scale(1.1);
-  color: #dbd334;
+  color: #3498DB;
 }
 .btn.btn--btnDownload {
   background-color: white;
-  color: #dbd334;
+  color: #3498DB;
 }
 .btn.btn--btnSend:hover {
   transform: none;
@@ -255,7 +255,7 @@ a {
   color: white;
   display: inline-block;
   text-align: center;
-  background-color: #242424;
+  background-color: #303849;
 }
 .featured .featured__box .featured__box-title {
   font-family: "Jost", sans-serif;
@@ -264,7 +264,7 @@ a {
   font-size: 2rem;
 }
 .featured .featured__box.featured__box--blue {
-  background-color: #dbd334;
+  background-color: #3498DB;
 }
 
 .accordion-item {
@@ -358,7 +358,7 @@ a {
   display: block;
 }
 .notFound a {
-  color: #dbd334;
+  color: #3498DB;
 }
 
 @media (max-width: 991px) {
